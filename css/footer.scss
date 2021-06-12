@@ -1,0 +1,88 @@
+.footer {
+  background-color: rgba(244, 244, 244, 0.7);
+  .footer__upper {
+    background: linear-gradient(rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)), url(../img/ft-bcg.png) no-repeat center center;
+    .upper__elements {
+      min-height: 448px;
+      display: flex;
+      justify-content: space-between;
+      .flex-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #222224;
+        .face__underscore {
+          font-size: 20px;
+          width: 360px;
+          text-align: center;
+          margin: 30px 0;
+          line-height: normal;
+          .face__underscore_italic {
+            font-style: italic;
+          }
+        }
+        .subscribe__title {
+          font-size: 24px;
+          font-weight: bold;
+        }
+        .subscribe__underscore {
+          font-size: 18px;
+        }
+        .subscription__form {
+          display: flex;
+          justify-content: center;
+          min-width: 356px;
+          margin-top: 32px;
+          .subscribe__input {
+            background-color: #e1e1e1;
+            border: none;
+            outline: none;
+            min-width: 256px;
+            height: 49px;
+            border-radius: 25px 0 0 25px;
+            padding-left: 22px;
+          }
+          .subscribe__submit {
+            border: none;
+            outline: none;
+            background-color: #e05c6e;
+            color: white;
+            text-align: center;
+            width: 100px;
+            height: 49px;
+            border-radius: 0 25px 25px 0;
+          }
+        }
+      }
+    }
+
+  }
+  .footer__lower {
+    background-color: #222224;
+    padding: 24px 0;
+    .footer__elements {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .copyright {
+        font-size: 16px;
+        color: #fbfbfb;
+      }
+      .socials {
+        width: 154px;
+        display: flex;
+        justify-content: space-between;
+        .social {
+          background-color: white;
+          color: black;
+          text-align: center;
+          font-size: 16px;
+          line-height: 32px;
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,375 @@
+@import "icon-fonts.css";
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,400&display=swap");
+@import "reset.css";
+html {
+  font-size: 14px;
+  line-height: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: black;
+}
+html body {
+  font-family: Lato, sans-serif;
+}
+html body .container {
+  margin: 0 auto;
+  width: 1140px;
+}
+
+* {
+  transition: 0.2s;
+}
+
+.header {
+  padding: 18px 0;
+  background-color: #222222;
+  min-height: 75px;
+}
+.header .header__elements {
+  display: flex;
+  justify-content: space-between;
+}
+.header .header__elements .header__left {
+  width: 111px;
+  min-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.header .header__elements .header__right {
+  width: 147px;
+  min-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.header .header__elements .header__right .header__cart {
+  position: relative;
+}
+.header .header__elements .header__right .header__cart .header__cart_circle {
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  background-image: url(../img/circle.svg);
+  top: -9px;
+  right: -10px;
+}
+.header .header__elements .header__right .header__cart .header__cart_circle::before {
+  position: absolute;
+  content: "5";
+  color: #ffffff;
+  font-size: 12px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header .header__elements .header__menu {
+  position: absolute;
+  top: 76px;
+  left: calc(50% + 570px);
+  min-height: 764px;
+  min-width: 232px;
+  background-color: white;
+  padding: 17px 17px 17px 34px;
+}
+.header .header__elements .header__menu .menu__title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+.header .header__elements .header__menu .menu__block .menu__group_title {
+  display: block;
+  font-size: 14px;
+  color: #f16d7f;
+}
+.header .header__elements .header__menu .menu__block .menu__group {
+  padding-left: 23px;
+}
+.header .header__elements .header__menu .menu__block .menu__group .menu__link {
+  font-size: 14px;
+  line-height: 22px;
+  color: #6f6e6e;
+}
+.header .header__elements .header__menu .menu__group_title::-webkit-details-marker {
+  display: none;
+}
+.header .header__elements .header__menu .menu__cross {
+  text-align: right;
+  color: #6f6e6e;
+  font-size: 12px;
+}
+
+.footer {
+  background-color: rgba(244, 244, 244, 0.7);
+}
+.footer .footer__upper {
+  background: linear-gradient(rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)), url(../img/ft-bcg.png) no-repeat center center;
+}
+.footer .footer__upper .upper__elements {
+  min-height: 448px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer__upper .upper__elements .flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #222224;
+}
+.footer .footer__upper .upper__elements .flex-column .face__underscore {
+  font-size: 20px;
+  width: 360px;
+  text-align: center;
+  margin: 30px 0;
+  line-height: normal;
+}
+.footer .footer__upper .upper__elements .flex-column .face__underscore .face__underscore_italic {
+  font-style: italic;
+}
+.footer .footer__upper .upper__elements .flex-column .subscribe__title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.footer .footer__upper .upper__elements .flex-column .subscribe__underscore {
+  font-size: 18px;
+}
+.footer .footer__upper .upper__elements .flex-column .subscription__form {
+  display: flex;
+  justify-content: center;
+  min-width: 356px;
+  margin-top: 32px;
+}
+.footer .footer__upper .upper__elements .flex-column .subscription__form .subscribe__input {
+  background-color: #e1e1e1;
+  border: none;
+  outline: none;
+  min-width: 256px;
+  height: 49px;
+  border-radius: 25px 0 0 25px;
+  padding-left: 22px;
+}
+.footer .footer__upper .upper__elements .flex-column .subscription__form .subscribe__submit {
+  border: none;
+  outline: none;
+  background-color: #e05c6e;
+  color: white;
+  text-align: center;
+  width: 100px;
+  height: 49px;
+  border-radius: 0 25px 25px 0;
+}
+.footer .footer__lower {
+  background-color: #222224;
+  padding: 24px 0;
+}
+.footer .footer__lower .footer__elements {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .footer__lower .footer__elements .copyright {
+  font-size: 16px;
+  color: #fbfbfb;
+}
+.footer .footer__lower .footer__elements .socials {
+  width: 154px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer__lower .footer__elements .socials .social {
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  line-height: 32px;
+  width: 32px;
+  height: 32px;
+}
+
+.main .main__heading {
+  background-color: #f1e4e6;
+}
+.main .main__heading .heading__elements {
+  min-height: 764px;
+  background: url(../img/head-bcg.png) no-repeat -65% bottom;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 5%;
+}
+.main .main__heading .heading__elements .heading__title-block {
+  border-left: 12px solid #f16d7f;
+  padding-left: 16px;
+  color: #222222;
+  margin-bottom: 120px;
+}
+.main .main__heading .heading__elements .heading__title-block .heading__title {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 60px;
+}
+.main .main__heading .heading__elements .heading__title-block .heading__text {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 32px;
+}
+.main .main__heading .heading__elements .heading__title-block .heading__text .heading__text_colored {
+  color: #f16d7f;
+}
+.main .product-groups {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 65px;
+}
+.main .product-groups .people {
+  width: 32%;
+  height: 260px;
+  margin-bottom: 30px;
+}
+.main .product-groups .main__f-women {
+  background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/f-women.png) no-repeat center center;
+}
+.main .product-groups .main__f-men {
+  background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/f-men.png) no-repeat center center;
+}
+.main .product-groups .main__f-kids {
+  background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/f-kids.png) no-repeat center center;
+}
+.main .product-groups .main__accessories {
+  width: 100%;
+  height: 180px;
+  background: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/accesories.png) no-repeat center center;
+}
+.main .product-groups .product-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main .product-groups .product-group .product-group__title {
+  font-size: 16px;
+  color: #ffffff;
+}
+.main .product-groups .product-group .product-group__text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f16d7f;
+}
+.main .fet-items-section {
+  padding: 96px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main .fet-items-section .fet-items__title, .main .fet-items-section .fet-items__description, .main .fet-items-section .fet-items__browse-btn {
+  text-align: center;
+}
+.main .fet-items-section .fet-items__title {
+  font-size: 30px;
+  color: #222222;
+}
+.main .fet-items-section .fet-items__description {
+  font-size: 14px;
+  color: #9f9f9f;
+  line-height: 20px;
+}
+.main .fet-items-section .fet-items {
+  margin: 48px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main .fet-items-section .fet-items .fet-item {
+  width: 360px;
+  height: 581px;
+  background-color: #f8f8f8;
+  margin-bottom: 30px;
+}
+.main .fet-items-section .fet-items .fet-item .fet-item__images {
+  width: 100%;
+  height: 420px;
+}
+.main .fet-items-section .fet-items .fet-item .fet-item__img1 {
+  background: #f8f8f8 url(../img/fi-1.png) no-repeat center center;
+}
+.main .fet-items-section .fet-items .fet-item .fet-item__img2 {
+  background: #f7e4e2 url(../img/fi-2.png) no-repeat center center;
+}
+.main .fet-items-section .fet-items .fet-item .fet-item__img3 {
+  background: #f3eeef url(../img/fi-3.png) no-repeat center center;
+}
+.main .fet-items-section .fet-items .fet-item .fet-item__img4 {
+  background: #f3eded url(../img/fi-4.png) no-repeat center center;
+}
+.main .fet-items-section .fet-items .fet-item .fet-item__img5 {
+  background: #f3eded url(../img/fi-5.png) no-repeat center center;
+}
+.main .fet-items-section .fet-items .fet-item .fet-item__img6 {
+  background: #f3eded url(../img/fi-6.png) no-repeat center center;
+}
+.main .fet-items-section .fet-items .fet-item .fet-item__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 26px 18px 20px;
+  height: 161px;
+}
+.main .fet-items-section .fet-items .fet-item .fet-item__info .fet-item__name {
+  font-size: 13px;
+  color: black;
+}
+.main .fet-items-section .fet-items .fet-item .fet-item__info .fet-item__description {
+  font-size: 14px;
+  font-weight: 300;
+  color: #5d5d5d;
+}
+.main .fet-items-section .fet-items .fet-item .fet-item__info .fet-item__price {
+  font-size: 16px;
+  color: #f16d7f;
+}
+.main .fet-items-section .fet-items__browse-btn {
+  width: 211px;
+  height: 47px;
+  font-size: 16px;
+  color: #f26376;
+  border: 1px solid #ff6a6a;
+  background-color: white;
+}
+.main .main__ending {
+  min-height: 341px;
+  background-color: #222224;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main .main__ending .main__ending-elements {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main .main__ending .main__ending-elements .main__ending-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main .main__ending .main__ending-elements .main__ending-element .main__ending-element_title {
+  font-size: 20px;
+  color: #fbfbfb;
+  margin: 24px 0 16px;
+}
+.main .main__ending .main__ending-elements .main__ending-element .main__ending-element_text {
+  font-size: 14px;
+  font-weight: 300;
+  color: #fbfbfb;
+}
+
+/*# sourceMappingURL=style__index.css.map */

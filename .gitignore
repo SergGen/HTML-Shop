@@ -1,2 +1,6 @@
 .idea
-/css/style.css.map
+/css/*.css.map
+/css/ending_black.css
+/css/footer.css
+/css/global.css
+/css/header.css
