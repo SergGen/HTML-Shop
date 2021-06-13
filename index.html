@@ -11,50 +11,57 @@
         <div class="container header__elements">
             <div class="header__left">
                 <a href="#" class="header__logo"><img src="img/Logo.png" alt="logo"></a>
-                <a href="#" class="header__logo"><img src="img/search.svg" alt="search"></a>
+                <button class="header__search _icon-search"></button>
             </div>
             <div class="header__right">
-                <a href="#" class="header__menu-button"><img src="img/burger.svg" alt="burger"></a>
-                <a href="#" class="header__profile"><img src="img/man.svg" alt="man"></a>
+                <input type="checkbox" id="menu-checkbox">
+                <label for="menu-checkbox">
+                    <img src="img/burger.svg" alt="burger" class="header__menu-button">
+<!--                    <p class="header__menu-button _icon-burger"></p>-->
+                </label>
+                <a href="#" class="header__profile"><img src="img/man.svg" alt="man" class="header__profile_img"></a>
                 <a href="#" class="header__cart">
                         <img src="img/cart.svg" alt="cart" class="header__cart_img">
-                        <div class="header__cart_circle"></div>
+                        <p class="header__cart_circle">5</p>
                 </a>
+                <nav class="header__menu">
+                    <label for="menu-checkbox" class="menu__label-cross">
+                        <img src="img/cross.svg" alt="cross" class="menu__cross">
+<!--                        <div class="menu__cross _icon-cross"></div>-->
+                    </label>
+                    <h3 class="menu__title">MENU</h3>
+                    <details class="menu__block" open>
+                        <summary class="menu__group_title">MAN</summary>
+                        <ul class="menu__group">
+                            <li><a href="#" class="menu__link">Accessories</a></li>
+                            <li><a href="#" class="menu__link">Bags</a></li>
+                            <li><a href="#" class="menu__link">Denim</a></li>
+                            <li><a href="#" class="menu__link">T-Shirts</a></li>
+                        </ul>
+                    </details>
+                    <details class="menu__block" open>
+                        <summary class="menu__group_title">WOMAN</summary>
+                        <ul class="menu__group">
+                            <li><a href="#" class="menu__link">Accessories</a></li>
+                            <li><a href="#" class="menu__link">Jackets & Coats</a></li>
+                            <li><a href="#" class="menu__link">Polos</a></li>
+                            <li><a href="#" class="menu__link">T-Shirts</a></li>
+                            <li><a href="#" class="menu__link">Shirts</a></li>
+                        </ul>
+                    </details>
+                    <details class="menu__block" open>
+                        <summary class="menu__group_title">KIDS</summary>
+                        <ul class="menu__group">
+                            <li><a href="#" class="menu__link">Accessories</a></li>
+                            <li><a href="#" class="menu__link">Jackets & Coats</a></li>
+                            <li><a href="#" class="menu__link">Polos</a></li>
+                            <li><a href="#" class="menu__link">T-Shirts</a></li>
+                            <li><a href="#" class="menu__link">Shirts</a></li>
+                            <li><a href="#" class="menu__link">Bags</a></li>
+                        </ul>
+                    </details>
+                </nav>
             </div>
-            <nav class="header__menu">
-                <p class="menu__cross _icon-cross"></p>
-                <h3 class="menu__title">MENU</h3>
-                <details class="menu__block">
-                    <summary class="menu__group_title">MAN</summary>
-                    <ul class="menu__group">
-                        <li><a href="#" class="menu__link">Accessories</a></li>
-                        <li><a href="#" class="menu__link">Bags</a></li>
-                        <li><a href="#" class="menu__link">Denim</a></li>
-                        <li><a href="#" class="menu__link">T-Shirts</a></li>
-                    </ul>
-                </details>
-                <details class="menu__block">
-                    <summary class="menu__group_title">WOMAN</summary>
-                    <ul class="menu__group">
-                        <li><a href="#" class="menu__link">Accessories</a></li>
-                        <li><a href="#" class="menu__link">Jackets & Coats</a></li>
-                        <li><a href="#" class="menu__link">Polos</a></li>
-                        <li><a href="#" class="menu__link">T-Shirts</a></li>
-                        <li><a href="#" class="menu__link">Shirts</a></li>
-                    </ul>
-                </details>
-                <details class="menu__block">
-                    <summary class="menu__group_title">KIDS</summary>
-                    <ul class="menu__group">
-                        <li><a href="#" class="menu__link">Accessories</a></li>
-                        <li><a href="#" class="menu__link">Jackets & Coats</a></li>
-                        <li><a href="#" class="menu__link">Polos</a></li>
-                        <li><a href="#" class="menu__link">T-Shirts</a></li>
-                        <li><a href="#" class="menu__link">Shirts</a></li>
-                        <li><a href="#" class="menu__link">Bags</a></li>
-                    </ul>
-                </details>
-            </nav>
         </div>
     </header>
     <main class="main">
@@ -95,6 +102,9 @@
                         <p class="fet-item__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <p class="fet-item__price">$52.00</p>
                     </div>
+                    <div class="fet-item__add-cart_area">
+                        <button class="_icon-cart fet-item__add-cart_btn"><span class="add-cart__text">Add to Cart</span></button>
+                    </div>
                 </div>
                 <div class="fet-item">
                     <div class="fet-item__images fet-item__img2"></div>
@@ -102,6 +112,9 @@
                         <h5 class="fet-item__name">ELLERY X M'O CAPSULE</h5>
                         <p class="fet-item__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <p class="fet-item__price">$52.00</p>
+                    </div>
+                    <div class="fet-item__add-cart_area">
+                        <button class="_icon-cart fet-item__add-cart_btn"><span class="add-cart__text">Add to Cart</span></button>
                     </div>
                 </div>
                 <div class="fet-item">
@@ -111,6 +124,9 @@
                         <p class="fet-item__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <p class="fet-item__price">$52.00</p>
                     </div>
+                    <div class="fet-item__add-cart_area">
+                        <button class="_icon-cart fet-item__add-cart_btn"><span class="add-cart__text">Add to Cart</span></button>
+                    </div>
                 </div>
                 <div class="fet-item">
                     <div class="fet-item__images fet-item__img4"></div>
@@ -118,6 +134,9 @@
                         <h5 class="fet-item__name">ELLERY X M'O CAPSULE</h5>
                         <p class="fet-item__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <p class="fet-item__price">$52.00</p>
+                    </div>
+                    <div class="fet-item__add-cart_area">
+                        <button class="_icon-cart fet-item__add-cart_btn"><span class="add-cart__text">Add to Cart</span></button>
                     </div>
                 </div>
                 <div class="fet-item">
@@ -127,6 +146,9 @@
                         <p class="fet-item__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <p class="fet-item__price">$52.00</p>
                     </div>
+                    <div class="fet-item__add-cart_area">
+                        <button class="_icon-cart fet-item__add-cart_btn"><span class="add-cart__text">Add to Cart</span></button>
+                    </div>
                 </div>
                 <div class="fet-item">
                     <div class="fet-item__images fet-item__img6"></div>
@@ -134,6 +156,9 @@
                         <h5 class="fet-item__name">ELLERY X M'O CAPSULE</h5>
                         <p class="fet-item__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <p class="fet-item__price">$52.00</p>
+                    </div>
+                    <div class="fet-item__add-cart_area">
+                        <button class="_icon-cart fet-item__add-cart_btn"><span class="add-cart__text">Add to Cart</span></button>
                     </div>
                 </div>
             </div>

@@ -46,12 +46,16 @@
           .subscribe__submit {
             border: none;
             outline: none;
-            background-color: #e05c6e;
+            background-color: #f16d7f;
             color: white;
             text-align: center;
             width: 100px;
             height: 49px;
             border-radius: 0 25px 25px 0;
+            cursor: pointer;
+          }
+          .subscribe__submit:hover {
+            background-color: #e05c6e;
           }
         }
       }
@@ -81,6 +85,10 @@
           line-height: 32px;
           width: 32px;
           height: 32px;
+        }
+        .social:hover{
+          color: white;
+          background-color: #f16d7f;
         }
       }
     }

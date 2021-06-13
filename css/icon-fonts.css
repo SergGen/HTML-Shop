@@ -9,7 +9,7 @@
   font-display: block;
 }
 
-[class^="_icon-"]::before, [class*=" _icon-"]::before {
+[class^="_icon-"]::after, [class*=" _icon-"]::after, [class^="_icon-"]::before, [class*=" _icon-"]::before {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: never;
@@ -42,7 +42,7 @@
 ._icon-cross:before {
   content: "\e910";
 }
-._icon-pyramid:before {
+._icon-pyramid:after {
   content: "\e911";
 }
 ._icon-burger:before {
