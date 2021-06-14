@@ -1,0 +1,178 @@
+@import "global.scss";
+
+.main {
+  @import "new-arrivals.scss";
+  .catalog  {
+    padding: 51px 0 97px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    .filter {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .filter__btn {
+        color: black;
+        background-color: transparent;
+        border: none;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        margin-left: 16px;
+        .space {
+          width: 10px;
+          display: inline-block;
+        }
+      }
+      .filter__btn::after {
+        font-size: 10px;
+      }
+      .filter-selectors {
+        margin-right: 40%;
+        width: 293px;
+        display: flex;
+        justify-content: space-between;
+        select {
+          border: none;
+          outline: none;
+          color: #6f6e6e;
+          cursor: pointer;
+          padding-right: 5px;
+        }
+      }
+    }
+    .fet-items {
+      padding: 48px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .fet-item {
+        width: 360px;
+        height: 581px;
+        background-color: #f8f8f8;
+        margin-bottom: 30px;
+        position: relative;
+        .fet-item__images {
+          width: 100%;
+          height: 420px;
+        }
+        .fet-item__img1 {
+          background: #f8f8f8 url(../img/fi-1.png) no-repeat center center;
+        }
+        .fet-item__img2 {
+          background: #f7e4e2 url(../img/fi-8.png) no-repeat center center;
+        }
+        .fet-item__img3 {
+          background: #f3eeef url(../img/fi-3.png) no-repeat center center;
+        }
+        .fet-item__img4 {
+          background: #f3eded url(../img/fi-4.png) no-repeat center center;
+        }
+        .fet-item__img5 {
+          background: #f3eded url(../img/fi-9.png) no-repeat center center;
+        }
+        .fet-item__img6 {
+          background: #f3eded url(../img/fi-11.png) no-repeat center center;
+        }
+        .fet-item__img7 {
+          background: #f3eded url(../img/fi-7.png) no-repeat center center;
+        }
+        .fet-item__img8 {
+          background: #f3eded url(../img/fi-10.png) no-repeat center center;
+        }
+        .fet-item__img9 {
+          background: #f3eded url(../img/fi-12.png) no-repeat center center;
+        }
+        .fet-item__info {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: flex-start;
+          padding: 26px 18px 20px;
+          height: 161px;
+          .fet-item__name {
+            font-size: 13px;
+            color: black;
+          }
+          .fet-item__description {
+            font-size: 14px;
+            font-weight: 300;
+            color: #5d5d5d;
+          }
+          .fet-item__price {
+            font-size: 16px;
+            color: #f16d7f;
+          }
+        }
+        .fet-item__add-cart_area {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 420px;
+          display: none;
+          background-color: rgba(58, 56, 56, 0.86);
+          .fet-item__add-cart_btn {
+            width: 138px;
+            height: 43px;
+            background-color: transparent;
+            color: white;
+            border: 1px solid white;
+            cursor: pointer;
+            font-size: 24px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            .add-cart__text{
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      .fet-item:hover .fet-item__add-cart_area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  .pages {
+    border: 1px solid #ebebeb;
+    width: 283px;
+    height: 43px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+    .pages__arrows {
+      font-size: 14px;
+      color: black;
+    }
+    .pages__number {
+      font-size: 16px;
+      font-weight: 300;
+      color: #c4c4c4;
+    }
+    .pages__number:hover {
+      color: #ef5b70;
+    }
+    .pages__number:nth-last-child(2) {
+      position: relative;
+    }
+    .ellipsis {
+      position: absolute;
+      top: 0;
+      left: -10px;
+    }
+    .pages__current {
+      color: #ef5b70;
+    }
+  }
+  @import "ending_black.scss";
+}

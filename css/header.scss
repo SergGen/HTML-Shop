@@ -1,0 +1,115 @@
+.header {
+  padding: 18px 0;
+  background-color: #222222;
+  min-height: 75px;
+  .header__elements {
+    display: flex;
+    justify-content: space-between;
+    .header__left {
+      width: 111px;
+      min-height: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      .header__search {
+        border: none;
+        background-color: transparent;
+        color: #e8e8e8;
+        font-size: 27px;
+        cursor: pointer;
+      }
+    }
+    .header__right{
+      width: 147px;
+      min-height: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      #menu-checkbox {
+        display: none;
+      }
+      .header__menu-button {
+        background-color: transparent;
+        color: #e8e8e8;
+        border: none;
+        font-size: 23px;
+        cursor: pointer;
+      }
+      .header__profile_img {
+        width: 29px;
+        height: 29px;
+      }
+      .header__cart {
+        position: relative;
+        .header__cart_img {
+          width: 32px;
+          height: 29px;
+        }
+        .header__cart_circle {
+          width: 19px;
+          height: 19px;
+          position: absolute;
+          top: -9px;
+          right: -10px;
+          font-size: 12px;
+          text-align: center;
+          line-height: 19px;
+          border-radius: 50%;
+          background-color: #f16d7f;
+          color: #ffffff;
+        }
+      }
+      .header__menu:not(:checked) {
+        display: none;
+      }
+      #menu-checkbox:checked ~ .header__menu {
+        position: absolute;
+        top: 76px;
+        left: calc(50% + 570px);
+        min-height: 764px;
+        min-width: 232px;
+        background-color: white;
+        padding: 17px 17px 17px 34px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .menu__label-cross {
+          align-self: flex-end;
+          .menu__cross {
+            color: #6f6e6e;
+            font-size: 12px;
+            background-color: transparent;
+            border: none;
+            margin-bottom: 9px;
+            cursor: pointer;
+          }
+        }
+        .menu__title {
+          font-size: 14px;
+          font-weight: bold;
+          margin-bottom: 24px;
+        }
+        .menu__block {
+          .menu__group_title {
+            display: block;
+            font-size: 14px;
+            color: #f16d7f;
+            cursor: pointer;
+          }
+          .menu__group {
+            padding-left: 23px;
+            .menu__link {
+              font-size: 14px;
+              line-height: 22px;
+              color: #6f6e6e;
+            }
+          }
+        }
+        .menu__group_title::-webkit-details-marker {
+          display: none;
+        }
+      }
+    }
+  }
+}
