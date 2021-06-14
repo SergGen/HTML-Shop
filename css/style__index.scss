@@ -37,6 +37,9 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 65px;
+    a:hover {
+      transform: scale(1.1,1.1);
+    }
     .people {
       width: 32%;
       height: 260px;

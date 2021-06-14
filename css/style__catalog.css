@@ -31,6 +31,9 @@ html body .container {
   display: flex;
   justify-content: space-between;
 }
+.header .header__elements .header__search:hover, .header .header__elements .header__menu-button:hover, .header .header__elements .header__profile_img:hover, .header .header__elements .header__cart_img:hover {
+  transform: scale(1.3, 1.3);
+}
 .header .header__elements .header__left {
   width: 111px;
   min-height: 40px;
