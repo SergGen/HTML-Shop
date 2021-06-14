@@ -1,33 +1,7 @@
 @import "global.scss";
 
 .main {
-  .new-arrivals {
-    background-color: #f8f3f4;
-    .new-arrivals__elements {
-      min-height: 148px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      .new-arrivals__title {
-        color: #f16d7f;
-        font-size: 24px;
-      }
-      .new-arrivals__links {
-        width: 210px;
-        display: flex;
-        justify-content: space-between;
-        font-size: 14px;
-        font-weight: 300;
-        .new-arrivals__link {
-          color: #636363;
-        }
-        .active {
-          font-weight: bold;
-          color: #f16d7f;
-        }
-      }
-    }
-  }
+  @import "new-arrivals.scss";
   .catalog  {
     padding: 51px 0 97px;
     display: flex;
