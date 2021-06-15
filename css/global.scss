@@ -19,8 +19,8 @@ html {
   }
 }
 
-* {
-  transition: 0.2s;
+*:hover {
+  transition: 0.3s;
 }
 
 @import "header.scss";

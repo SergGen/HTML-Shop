@@ -18,8 +18,8 @@ html body .container {
   width: 1140px;
 }
 
-* {
-  transition: 0.2s;
+*:hover {
+  transition: 0.3s;
 }
 
 .header {
@@ -189,6 +189,10 @@ html body .container {
   border-radius: 25px 0 0 25px;
   padding-left: 22px;
 }
+.footer .footer__upper .upper__elements .flex-column .subscription__form .subscribe__input::placeholder {
+  color: #222224;
+  opacity: 0.67;
+}
 .footer .footer__upper .upper__elements .flex-column .subscription__form .subscribe__submit {
   border: none;
   outline: none;
@@ -343,24 +347,9 @@ html body .container {
 .main .fet-items-section .fet-items .fet-item .fet-item__images {
   width: 100%;
   height: 420px;
-}
-.main .fet-items-section .fet-items .fet-item .fet-item__img1 {
-  background: #f8f8f8 url(../img/fi-1.png) no-repeat center center;
-}
-.main .fet-items-section .fet-items .fet-item .fet-item__img2 {
-  background: #f7e4e2 url(../img/fi-2.png) no-repeat center center;
-}
-.main .fet-items-section .fet-items .fet-item .fet-item__img3 {
-  background: #f3eeef url(../img/fi-3.png) no-repeat center center;
-}
-.main .fet-items-section .fet-items .fet-item .fet-item__img4 {
-  background: #f3eded url(../img/fi-4.png) no-repeat center center;
-}
-.main .fet-items-section .fet-items .fet-item .fet-item__img5 {
-  background: #f3eded url(../img/fi-5.png) no-repeat center center;
-}
-.main .fet-items-section .fet-items .fet-item .fet-item__img6 {
-  background: #f3eded url(../img/fi-6.png) no-repeat center center;
+  background-color: #f7e4e2;
+  object-fit: scale-down;
+  object-position: center;
 }
 .main .fet-items-section .fet-items .fet-item .fet-item__info {
   display: flex;
@@ -389,10 +378,14 @@ html body .container {
   left: 0;
   width: 100%;
   height: 420px;
-  display: none;
-  background-color: rgba(58, 56, 56, 0.86);
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .main .fet-items-section .fet-items .fet-item .fet-item__add-cart_area .fet-item__add-cart_btn {
+  display: none;
   width: 138px;
   height: 43px;
   background-color: transparent;
@@ -400,7 +393,6 @@ html body .container {
   border: 1px solid white;
   cursor: pointer;
   font-size: 24px;
-  display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -408,10 +400,10 @@ html body .container {
   font-size: 14px;
 }
 .main .fet-items-section .fet-items .fet-item:hover .fet-item__add-cart_area {
+  background-color: rgba(58, 56, 56, 0.86);
+}
+.main .fet-items-section .fet-items .fet-item:hover .fet-item__add-cart_area .fet-item__add-cart_btn {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .main .fet-items-section .fet-items__browse-btn {
   width: 211px;
