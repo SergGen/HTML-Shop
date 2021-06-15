@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style__registration.css" rel="stylesheet">
+    <title>Shop-Registration</title>
+</head>
+<body>
+    <header class="header">
+    <div class="container header__elements">
+        <div class="header__left">
+            <a href="#" class="header__logo"><img src="img/Logo.png" alt="logo"></a>
+            <button class="header__search _icon-search"></button>
+        </div>
+        <div class="header__right">
+            <input type="checkbox" id="menu-checkbox">
+            <label for="menu-checkbox">
+                <img src="img/burger.svg" alt="burger" class="header__menu-button">
+                <!--                    <p class="header__menu-button _icon-burger"></p>-->
+            </label>
+            <a href="#" class="header__profile"><img src="img/man.svg" alt="man" class="header__profile_img"></a>
+            <a href="#" class="header__cart">
+                <img src="img/cart.svg" alt="cart" class="header__cart_img">
+                <p class="header__cart_circle">5</p>
+            </a>
+            <nav class="header__menu">
+                <label for="menu-checkbox" class="menu__label-cross">
+                    <img src="img/cross.svg" alt="cross" class="menu__cross">
+                    <!--                        <div class="menu__cross _icon-cross"></div>-->
+                </label>
+                <h3 class="menu__title">MENU</h3>
+                <details class="menu__block" open>
+                    <summary class="menu__group_title">MAN</summary>
+                    <ul class="menu__group">
+                        <li><a href="#" class="menu__link">Accessories</a></li>
+                        <li><a href="#" class="menu__link">Bags</a></li>
+                        <li><a href="#" class="menu__link">Denim</a></li>
+                        <li><a href="#" class="menu__link">T-Shirts</a></li>
+                    </ul>
+                </details>
+                <details class="menu__block" open>
+                    <summary class="menu__group_title">WOMAN</summary>
+                    <ul class="menu__group">
+                        <li><a href="#" class="menu__link">Accessories</a></li>
+                        <li><a href="#" class="menu__link">Jackets & Coats</a></li>
+                        <li><a href="#" class="menu__link">Polos</a></li>
+                        <li><a href="#" class="menu__link">T-Shirts</a></li>
+                        <li><a href="#" class="menu__link">Shirts</a></li>
+                    </ul>
+                </details>
+                <details class="menu__block" open>
+                    <summary class="menu__group_title">KIDS</summary>
+                    <ul class="menu__group">
+                        <li><a href="#" class="menu__link">Accessories</a></li>
+                        <li><a href="#" class="menu__link">Jackets & Coats</a></li>
+                        <li><a href="#" class="menu__link">Polos</a></li>
+                        <li><a href="#" class="menu__link">T-Shirts</a></li>
+                        <li><a href="#" class="menu__link">Shirts</a></li>
+                        <li><a href="#" class="menu__link">Bags</a></li>
+                    </ul>
+                </details>
+            </nav>
+        </div>
+    </div>
+</header>
+    <main class="main">
+        <div class="reg-heading">
+            <h1 class="reg-heading__title container">REGISTRATION</h1>
+        </div>
+        <div class="reg-elements container">
+            <form action="#" class="form-reg" method="post">
+                <h5 class="reg__title">Your Name</h5>
+                <label>
+                    <input type="text" placeholder="First Name" class="reg__inp-text" required>
+                </label>
+                <label>
+                    <input type="text" placeholder="Last Name" class="reg__inp-text" required>
+                </label>
+                <div class="reg__radios">
+                    <label>
+                        <input type="radio" name="sex" value="male" required><span>Male</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="sex" value="female"><span>Female</span>
+                    </label>
+                </div>
+                <h5 class="reg__title">Login details</h5>
+                <label>
+                    <input type="email" placeholder="Email" class="reg__inp-text" required>
+                </label>
+                <label>
+                    <input type="password" placeholder="Password" class="reg__inp-text" required>
+                </label>
+                <p class="reg__description">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+                <button type="submit" class="reg__submit">JOIN NOW<span class="submit__arrow _icon-arrow-right2"></span></button>
+            </form>
+            <div class="text-reg">
+                <h3 class="text-reg__title">LOYALTY HAS ITS PERKS</h3>
+                <p class="text-reg__description">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+                <ul class="text-reg__list">
+                    <li class="text-reg__elem _icon-bird"><span>15% off welcome offer</span></li>
+                    <li class="text-reg__elem _icon-bird"><span>Free shipping, returns and exchanges on all orders</span></li>
+                    <li class="text-reg__elem _icon-bird"><span>$10 off a purchase on your birthday</span></li>
+                    <li class="text-reg__elem _icon-bird"><span>Early access to products</span></li>
+                    <li class="text-reg__elem _icon-bird"><span>Exclusive offers & rewards</span></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__upper">
+            <div class="upper__elements container">
+                <div class="flex-column">
+                    <img src="img/face.png" alt="face" class="face__image">
+                    <p class="face__underscore">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span class="face__underscore_italic">a pulvinar purus condimentum</span>“</p>
+                </div>
+                <div class="flex-column">
+                    <h3 class="subscribe__title">SUBSCRIBE</h3>
+                    <p class="subscribe__underscore">FOR OUR NEWLETTER AND PROMOTION</p>
+                    <form class="subscription__form" action="#">
+                        <label>
+                            <input type="email" placeholder="Enter Your Email" class="subscribe__input" required>
+                        </label>
+                        <button type="submit" class="subscribe__submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer__lower">
+            <div class="container footer__elements">
+                <p class="copyright">&copy; 2021  Brand  All Rights Reserved.</p>
+                <div class="socials">
+                    <a href=""><p class="social _icon-facebook"></p></a>
+                    <a href=""><p class="social _icon-instagram"></p></a>
+                    <a href=""><p class="social _icon-pinterest"></p></a>
+                    <a href=""><p class="social _icon-twitter"></p></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

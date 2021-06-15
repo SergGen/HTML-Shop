@@ -42,7 +42,7 @@
 ._icon-cross:before {
   content: "\e910";
 }
-._icon-pyramid:after {
+._icon-pyramid:before {
   content: "\e911";
 }
 ._icon-burger:before {
