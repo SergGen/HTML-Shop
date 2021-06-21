@@ -3,11 +3,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   .fet-item {
     width: 360px;
     height: 581px;
     background-color: #f8f8f8;
-    margin-bottom: 30px;
+    margin: 0 5px 30px;
     position: relative;
     .fet-item__images {
       width: 100%;
@@ -70,5 +71,27 @@
     .fet-item__add-cart_btn {
       display: flex;
     }
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1140px) {
+ .fet-items {
+   justify-content: space-evenly;
+ }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 768px) {
+  .fet-items {
+    justify-content: center;
+    padding: 76px 0 0;
+    .fet-item {
+      margin: 0 4px 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .fet-items {
+    padding: 64px 0 11px;
   }
 }
