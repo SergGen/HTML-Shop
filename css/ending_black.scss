@@ -14,6 +14,7 @@
       justify-content: center;
       align-items: center;
       text-align: center;
+      margin: 0 20px;
       .main__ending-element_title {
         font-size: 20px;
         color: #fbfbfb;
@@ -23,6 +24,22 @@
         font-size: 14px;
         font-weight: 300;
         color: #fbfbfb;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main__ending {
+    height: 610px;
+    .main__ending-elements {
+      height: 100%;
+      flex-direction: column;
+      justify-content: space-evenly;
+      .main__ending-element {
+        .main__ending-element_text {
+          width: 360px;
+        }
       }
     }
   }
