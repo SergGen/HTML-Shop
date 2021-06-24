@@ -111,6 +111,7 @@ html body .container {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  z-index: 1;
 }
 .header .header__elements .header__right #menu-checkbox:checked ~ .header__menu .menu__label-cross {
   align-self: flex-end;
@@ -166,10 +167,12 @@ html body .container {
   }
 }
 .footer {
+  width: 100%;
   background-color: rgba(244, 244, 244, 0.7);
 }
 .footer .footer__upper {
-  background: linear-gradient(rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)), url(../img/ft-bcg.png) no-repeat left bottom;
+  width: 100%;
+  background: linear-gradient(rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)), url(../img/ft-bcg.png) no-repeat center bottom;
 }
 .footer .footer__upper .upper__elements {
   min-height: 448px;
@@ -184,6 +187,7 @@ html body .container {
   align-items: center;
   justify-content: center;
   color: #222224;
+  border: none;
 }
 .footer .footer__upper .upper__elements .flex-column .face__underscore {
   font-size: 20px;
@@ -199,18 +203,19 @@ html body .container {
 .footer .footer__upper .upper__elements .flex-column .subscribe__title {
   font-size: 24px;
   font-weight: bold;
+  text-align: center;
 }
 .footer .footer__upper .upper__elements .flex-column .subscribe__underscore {
   font-size: 18px;
 }
-.footer .footer__upper .upper__elements .flex-column .subscription__form {
+.footer .footer__upper .upper__elements .flex-column .subscription__area {
   display: flex;
   justify-content: center;
   width: 100%;
   max-width: 356px;
   margin-top: 32px;
 }
-.footer .footer__upper .upper__elements .flex-column .subscription__form .subscribe__input {
+.footer .footer__upper .upper__elements .flex-column .subscription__area .subscribe__input {
   background-color: #e1e1e1;
   border: none;
   outline: none;
@@ -219,11 +224,11 @@ html body .container {
   border-radius: 25px 0 0 25px;
   padding-left: 22px;
 }
-.footer .footer__upper .upper__elements .flex-column .subscription__form .subscribe__input::placeholder {
+.footer .footer__upper .upper__elements .flex-column .subscription__area .subscribe__input::placeholder {
   color: #222224;
   opacity: 0.67;
 }
-.footer .footer__upper .upper__elements .flex-column .subscription__form .subscribe__submit {
+.footer .footer__upper .upper__elements .flex-column .subscription__area .subscribe__submit {
   border: none;
   outline: none;
   background-color: #f16d7f;
@@ -235,7 +240,7 @@ html body .container {
   border-radius: 0 25px 25px 0;
   cursor: pointer;
 }
-.footer .footer__upper .upper__elements .flex-column .subscription__form .subscribe__submit:hover {
+.footer .footer__upper .upper__elements .flex-column .subscription__area .subscribe__submit:hover {
   background-color: #e05c6e;
 }
 .footer .footer__lower {
@@ -307,13 +312,16 @@ html body .container {
   flex-direction: column;
   justify-content: flex-start;
 }
-.main .reg-elements .form-reg .reg__title {
+.main .reg-elements .form-reg .reg-fieldset {
+  border: none;
+}
+.main .reg-elements .form-reg .reg-fieldset .reg__title {
   font-size: 16px;
   font-weight: 300;
   color: #222222;
   margin: 10px 0;
 }
-.main .reg-elements .form-reg .reg__inp-text {
+.main .reg-elements .form-reg .reg-fieldset .reg__inp-text {
   width: 359px;
   height: 44px;
   margin: 10px 0;
@@ -321,7 +329,7 @@ html body .container {
   outline: none;
   border: 1px solid #a4a4a4;
 }
-.main .reg-elements .form-reg .reg__inp-text::placeholder {
+.main .reg-elements .form-reg .reg-fieldset .reg__inp-text::placeholder {
   color: #b1b1b1;
   font-size: 13px;
   font-weight: 300;
