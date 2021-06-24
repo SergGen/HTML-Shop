@@ -20,8 +20,8 @@
         font-weight: 600;
         cursor: pointer;
         margin-left: 16px;
-        span {
-          width: 10px;
+        .filter__btn_icon {
+          width: 15px;
           display: inline-block;
           font-size: 10px;
           padding-left: 10px;
@@ -83,4 +83,56 @@
     }
   }
   @import "ending_black.scss";
+}
+
+@media only screen and (max-width: 1140px) {
+  .main {
+    .catalog {
+      .filter {
+        .filter__btn, .filter-selectors {
+          margin: 0;
+        }
+      }
+      .fet-items {
+        .fet-item:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    .catalog {
+      padding: 24px 0 64px;
+      .fet-items {
+        padding: 40px 0 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .main {
+    .catalog {
+      .filter {
+        .filter__btn {
+          .filter__btn_text {
+            display: none;
+          }
+          .filter__btn_icon {
+            font-size: 25px;
+            width: 36px;
+          }
+        }
+        .filter-selectors {
+          font-size: 12px;
+        }
+      }
+      .fet-items {
+        padding: 32px 0 0;
+      }
+    }
+  }
 }

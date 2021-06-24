@@ -1,7 +1,9 @@
 .footer {
+  width: 100%;
   background-color: rgba(244, 244, 244, 0.7);
   .footer__upper {
-    background: linear-gradient(rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)), url(../img/ft-bcg.png) no-repeat left bottom;
+    width: 100%;
+    background: linear-gradient(rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)), url(../img/ft-bcg.png) no-repeat center bottom;
     .upper__elements {
       min-height: 448px;
       display: flex;
@@ -14,6 +16,7 @@
         align-items: center;
         justify-content: center;
         color: #222224;
+        border: none;
         .face__underscore {
           font-size: 20px;
           width: 100%;
@@ -28,11 +31,12 @@
         .subscribe__title {
           font-size: 24px;
           font-weight: bold;
+          text-align: center;
         }
         .subscribe__underscore {
           font-size: 18px;
         }
-        .subscription__form {
+        .subscription__area {
           display: flex;
           justify-content: center;
           width: 100%;

@@ -79,6 +79,7 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
+        z-index: 1;
         .menu__label-cross {
           align-self: flex-end;
           .menu__cross {

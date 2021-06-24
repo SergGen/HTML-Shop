@@ -70,13 +70,15 @@
         </div>
         <div class="reg-elements container">
             <form action="#" class="form-reg" method="post">
-                <h5 class="reg__title">Your Name</h5>
+                <fieldset class="reg-fieldset">
+                <legend class="reg__title">Your Name</legend>
                 <label>
                     <input type="text" placeholder="First Name" class="reg__inp-text" required>
                 </label>
                 <label>
                     <input type="text" placeholder="Last Name" class="reg__inp-text" required>
                 </label>
+                </fieldset>
                 <div class="reg__radios">
                     <label>
                         <input type="radio" name="sex" value="male" required><span>Male</span>
@@ -85,13 +87,15 @@
                         <input type="radio" name="sex" value="female"><span>Female</span>
                     </label>
                 </div>
-                <h5 class="reg__title">Login details</h5>
+                <fieldset class="reg-fieldset">
+                <legend class="reg__title">Login details</legend>
                 <label>
                     <input type="email" placeholder="Email" class="reg__inp-text" required>
                 </label>
                 <label>
                     <input type="password" placeholder="Password" class="reg__inp-text" required>
                 </label>
+                </fieldset>
                 <p class="reg__description">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
                 <button type="submit" class="reg__submit">JOIN NOW<span class="submit__arrow _icon-arrow-right2"></span></button>
             </form>
@@ -115,26 +119,28 @@
                     <img src="img/face.png" alt="face" class="face__image">
                     <p class="face__underscore">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span class="face__underscore_italic">a pulvinar purus condimentum</span>“</p>
                 </div>
-                <div class="flex-column">
-                    <h3 class="subscribe__title">SUBSCRIBE</h3>
-                    <p class="subscribe__underscore">FOR OUR NEWLETTER AND PROMOTION</p>
-                    <form class="subscription__form" action="#">
-                        <label>
-                            <input type="email" placeholder="Enter Your Email" class="subscribe__input" required>
-                        </label>
-                        <button type="submit" class="subscribe__submit">Subscribe</button>
-                    </form>
-                </div>
+                <form action="#">
+                    <fieldset class="flex-column">
+                        <legend class="subscribe__title">SUBSCRIBE</legend>
+                        <p class="subscribe__underscore">FOR OUR NEWLETTER AND PROMOTION</p>
+                        <div class="subscription__area">
+                            <label>
+                                <input type="email" placeholder="Enter Your Email" class="subscribe__input" required>
+                            </label>
+                            <button type="submit" class="subscribe__submit">Subscribe</button>
+                        </div>
+                    </fieldset>
+                </form>
             </div>
         </div>
         <div class="footer__lower">
             <div class="container footer__elements">
                 <p class="copyright">&copy; 2021  Brand  All Rights Reserved.</p>
                 <div class="socials">
-                    <a href=""><p class="social _icon-facebook"></p></a>
-                    <a href=""><p class="social _icon-instagram"></p></a>
-                    <a href=""><p class="social _icon-pinterest"></p></a>
-                    <a href=""><p class="social _icon-twitter"></p></a>
+                    <a href="#" class="social _icon-facebook"></a>
+                    <a href="#" class="social _icon-instagram"></a>
+                    <a href="#" class="social _icon-pinterest"></a>
+                    <a href="#" class="social _icon-twitter"></a>
                 </div>
             </div>
         </div>

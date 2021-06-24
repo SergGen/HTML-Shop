@@ -16,6 +16,7 @@ h6,
 p,
 ul,
 input,
+fieldset,
 figure,
 blockquote,
 dl,
@@ -77,4 +78,8 @@ select {
 
 a {
     text-decoration: none;
+}
+
+fieldset {
+    padding: 0;
 }
