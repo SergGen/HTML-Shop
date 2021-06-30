@@ -17,7 +17,6 @@
             <input type="checkbox" id="menu-checkbox">
             <label for="menu-checkbox">
                 <img src="img/burger.svg" alt="burger" class="header__menu-button">
-                <!--                    <p class="header__menu-button _icon-burger"></p>-->
             </label>
             <a href="#" class="header__profile"><img src="img/man.svg" alt="man" class="header__profile_img"></a>
             <a href="#" class="header__cart">
@@ -27,7 +26,6 @@
             <nav class="header__menu">
                 <label for="menu-checkbox" class="menu__label-cross">
                     <img src="img/cross.svg" alt="cross" class="menu__cross">
-                    <!--                        <div class="menu__cross _icon-cross"></div>-->
                 </label>
                 <h3 class="menu__title">MENU</h3>
                 <details class="menu__block" open>
@@ -79,23 +77,79 @@
     </section>
     <div class="catalog container">
         <div class="filter">
-            <button class="filter__btn"><span class="filter__btn_text">FILTER</span><span class="filter__btn_icon _icon-pyramid"></span></button>
+            <div class="filter__menu">
+                <input type="checkbox" id="filter-checkbox">
+                <label for="filter-checkbox" class="filter__btn"><span class="filter__btn_text">FILTER</span><span class="filter__btn_icon _icon-pyramid"></span></label>
+                <div class="filter__menu_hide">
+                    <label for="filter-checkbox">
+                        <span class="filter__title">FILTER<span class="_icon-pyramid"></span></span>
+                    </label>
+                    <details class="filter__block" open>
+                        <summary class="filter__group_title">CATEGORY</summary>
+                        <ul class="filter__group">
+                            <li class="filter__link">Accessories</li>
+                            <li class="filter__link">Bags</li>
+                            <li class="filter__link">Denim</li>
+                            <li class="filter__link">Hoodies & Sweatshirts</li>
+                            <li class="filter__link">Jackets & Coats</li>
+                            <li class="filter__link">Polos</li>
+                            <li class="filter__link">Shirts</li>
+                            <li class="filter__link">Shoes</li>
+                            <li class="filter__link">Sweaters & Knits</li>
+                            <li class="filter__link">T-Shirts</li>
+                            <li class="filter__link">Tanks</li>
+                        </ul>
+                    </details>
+                    <details class="filter__block" open>
+                        <summary class="filter__group_title">BRAND</summary>
+                    </details>
+                    <details class="filter__block" open>
+                        <summary class="filter__group_title">DESIGNER</summary>
+                    </details>
+                </div>
+            </div>
             <form action="#" class="filter-selectors">
-                <label>
-                    <select name="TRENDING-NOW" id="TRENDING-NOW">
-                        <option value="TRENDING NOW">TRENDING NOW</option>
-                    </select>
-                </label>
-                <label>
-                    <select name="SIZE" id="SIZE">
-                        <option value="SIZE">SIZE</option>
-                    </select>
-                </label>
-                <label>
-                    <select name="PRICE" id="PRICE">
-                        <option value="PRICE">PRICE</option>
-                    </select>
-                </label>
+                <div class="selector-btn__trending">
+                    <input type="checkbox" id="selector__checkbox_trending">
+                    <label for="selector__checkbox_trending" class="selector__checkbox_label">
+                        <span class="selector__text">TRENDING-NOW</span><span class="selector__icon _icon-arrow-down"></span>
+                    </label>
+                    <div class="selector__trending">
+                        <p>Some trending</p>
+                    </div>
+                </div>
+                <div class="selector-btn__size">
+                    <input type="checkbox" id="selector__checkbox_size">
+                    <label for="selector__checkbox_size" class="selector__checkbox_label">
+                        <span class="selector__text">SIZE</span><span class="selector__icon _icon-arrow-down"></span>
+                    </label>
+                    <div class="selector__size">
+                        <label>
+                            <input type="checkbox"><span>XS</span>
+                        </label>
+                        <label>
+                            <input type="checkbox"><span>S</span>
+                        </label>
+                        <label>
+                            <input type="checkbox"><span>M</span>
+                        </label>
+                        <label>
+                            <input type="checkbox"><span>L</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="selector-btn__price">
+                    <input type="checkbox" id="selector__checkbox_price">
+                    <label for="selector__checkbox_price" class="selector__checkbox_label">
+                        <span class="selector__text">PRICE</span><span class="selector__icon _icon-arrow-down"></span>
+                    </label>
+                    <div class="selector__price">
+                        <label>
+                            <input type="range" min="0" max="100">
+                            <span>PRICE</span>
+                        </label>
+                    </div>
+                </div>
             </form>
         </div>
         <div class="fet-items">
@@ -238,7 +292,7 @@
                 <img src="img/face.png" alt="face" class="face__image">
                 <p class="face__underscore">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span class="face__underscore_italic">a pulvinar purus condimentum</span>“</p>
             </div>
-            <form action="#">
+            <form action="#" class="form-subscription">
                 <fieldset class="flex-column">
                     <legend class="subscribe__title">SUBSCRIBE</legend>
                     <p class="subscribe__underscore">FOR OUR NEWLETTER AND PROMOTION</p>

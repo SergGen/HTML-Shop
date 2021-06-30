@@ -61,6 +61,9 @@ html body .container {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  /*.header__menu:not(:checked) {
+    display: none;
+  }*/
 }
 .header .header__elements .header__right #menu-checkbox {
   display: none;
@@ -96,17 +99,17 @@ html body .container {
   background-color: #f16d7f;
   color: #ffffff;
 }
-.header .header__elements .header__right .header__menu:not(:checked) {
+.header .header__elements .header__right #menu-checkbox:not(:checked) ~ .header__menu {
   display: none;
 }
 .header .header__elements .header__right #menu-checkbox:checked ~ .header__menu {
   position: absolute;
   top: 76px;
   right: calc(50vw - 570px - 232px);
-  min-height: 764px;
   min-width: 232px;
   background-color: white;
   padding: 17px 17px 17px 34px;
+  box-shadow: 6px 4px 35px 0 rgba(0, 0, 0, 0.21);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -138,9 +141,11 @@ html body .container {
 .header .header__elements .header__right #menu-checkbox:checked ~ .header__menu .menu__block .menu__group {
   padding-left: 23px;
 }
-.header .header__elements .header__right #menu-checkbox:checked ~ .header__menu .menu__block .menu__group .menu__link {
+.header .header__elements .header__right #menu-checkbox:checked ~ .header__menu .menu__block .menu__group li {
+  margin: 16px 0;
+}
+.header .header__elements .header__right #menu-checkbox:checked ~ .header__menu .menu__block .menu__group li .menu__link {
   font-size: 14px;
-  line-height: 22px;
   color: #6f6e6e;
 }
 .header .header__elements .header__right #menu-checkbox:checked ~ .header__menu .menu__group_title::-webkit-details-marker {
@@ -178,7 +183,6 @@ html body .container {
   min-height: 448px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   align-items: center;
 }
 .footer .footer__upper .upper__elements .flex-column {
@@ -207,6 +211,9 @@ html body .container {
 }
 .footer .footer__upper .upper__elements .flex-column .subscribe__underscore {
   font-size: 18px;
+  width: 100%;
+  max-width: 279px;
+  text-align: center;
 }
 .footer .footer__upper .upper__elements .flex-column .subscription__area {
   display: flex;
@@ -215,16 +222,19 @@ html body .container {
   max-width: 356px;
   margin-top: 32px;
 }
-.footer .footer__upper .upper__elements .flex-column .subscription__area .subscribe__input {
+.footer .footer__upper .upper__elements .flex-column .subscription__area label {
+  width: 100%;
+}
+.footer .footer__upper .upper__elements .flex-column .subscription__area label .subscribe__input {
   background-color: #e1e1e1;
   border: none;
   outline: none;
-  width: 256px;
+  width: 100%;
   height: 49px;
   border-radius: 25px 0 0 25px;
-  padding-left: 22px;
+  padding: 0 22px;
 }
-.footer .footer__upper .upper__elements .flex-column .subscription__area .subscribe__input::placeholder {
+.footer .footer__upper .upper__elements .flex-column .subscription__area label .subscribe__input::placeholder {
   color: #222224;
   opacity: 0.67;
 }
@@ -243,6 +253,10 @@ html body .container {
 .footer .footer__upper .upper__elements .flex-column .subscription__area .subscribe__submit:hover {
   background-color: #e05c6e;
 }
+.footer .footer__upper .upper__elements .form-subscription {
+  width: 100%;
+  max-width: 570px;
+}
 .footer .footer__lower {
   background-color: #222224;
   padding: 24px 0;
@@ -256,6 +270,7 @@ html body .container {
 .footer .footer__lower .footer__elements .copyright {
   font-size: 16px;
   color: #fbfbfb;
+  text-align: center;
 }
 .footer .footer__lower .footer__elements .socials {
   width: 100%;
@@ -278,6 +293,9 @@ html body .container {
 }
 
 @media only screen and (max-width: 768px) {
+  .footer .footer__upper {
+    background-position: center, left 33% bottom -21%;
+  }
   .footer .footer__upper .upper__elements {
     min-height: 693px;
     flex-direction: column;
@@ -285,6 +303,16 @@ html body .container {
   }
 }
 @media only screen and (max-width: 375px) {
+  .footer .footer__upper {
+    background-position: center, left 27% bottom;
+  }
+  .footer .footer__upper .upper__elements .flex-column .face__underscore {
+    font-size: 18px;
+    max-width: 343px;
+  }
+  .footer .footer__upper .upper__elements .flex-column .subscribe__underscore {
+    font-size: 14px;
+  }
   .footer .footer__lower {
     height: 143px;
     padding: 43px 0 9px;
@@ -308,6 +336,7 @@ html body .container {
   padding: 64px 0 174px;
 }
 .main .reg-elements .form-reg {
+  width: 48%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -322,7 +351,8 @@ html body .container {
   margin: 10px 0;
 }
 .main .reg-elements .form-reg .reg-fieldset .reg__inp-text {
-  width: 359px;
+  width: 100%;
+  max-width: 359px;
   height: 44px;
   margin: 10px 0;
   padding-left: 17px;
@@ -359,7 +389,8 @@ html body .container {
   font-size: 13px;
   font-weight: 300;
   color: #b1b1b1;
-  width: 359px;
+  width: 100%;
+  max-width: 359px;
 }
 .main .reg-elements .form-reg .reg__submit {
   background-color: #f16d7f;
@@ -378,28 +409,50 @@ html body .container {
 .main .reg-elements .form-reg .reg__submit:hover {
   background-color: #e05c6e;
 }
-.main .text-reg {
+.main .reg-elements .text-reg {
+  width: 48%;
   font-size: 24px;
   font-weight: 300;
 }
-.main .text-reg .text-reg__title {
+.main .reg-elements .text-reg .text-reg__title {
   font-weight: 300;
 }
-.main .text-reg .text-reg__description {
-  width: 652px;
+.main .reg-elements .text-reg .text-reg__description {
+  width: 100%;
+  max-width: 652px;
   margin: 21px 0;
 }
-.main .text-reg .text-reg__list {
-  padding: 0;
+.main .reg-elements .text-reg .text-reg__list {
+  padding-left: 30px;
+  list-style: outside url("./../img/bird.svg");
 }
-.main .text-reg .text-reg__list .text-reg__elem {
+.main .reg-elements .text-reg .text-reg__list .text-reg__elem {
   margin: 8px 0;
-  font-size: 16px;
-}
-.main .text-reg .text-reg__list .text-reg__elem span {
-  display: inline-block;
   font-size: 24px;
   padding-left: 23px;
+}
+
+@media only screen and (max-width: 768px) {
+  .main .reg-elements {
+    padding: 40px 0 95px;
+  }
+}
+@media only screen and (max-width: 736px) {
+  .main .reg-heading .reg-heading__title {
+    text-align: center;
+  }
+  .main .reg-elements {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .reg-elements .form-reg {
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  .main .reg-elements .text-reg {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style__registration.css.map */
