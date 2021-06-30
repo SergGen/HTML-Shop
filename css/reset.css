@@ -20,7 +20,9 @@ fieldset,
 figure,
 blockquote,
 dl,
-dd {
+dd,
+hr,
+div{
     margin: 0;
 }
 

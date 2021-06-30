@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style__product.css" rel="stylesheet">
-    <title>Shop-Product</title>
+    <link href="css/style__cart.css" rel="stylesheet">
+    <title>Shop-Catalog</title>
 </head>
 <body>
 <header class="header">
@@ -65,85 +65,68 @@
 <main class="main">
     <section class="new-arrivals">
         <div class="new-arrivals__elements container">
-            <h2 class="new-arrivals__title">NEW ARRIVALS</h2>
-            <div class="new-arrivals__links">
-                <a href="#" class="new-arrivals__link">HOME</a>
-                <p>/</p>
-                <a href="#" class="new-arrivals__link">MEN</a>
-                <p>/</p>
-                <a href="#" class="new-arrivals__link active">NEW ARRIVALS</a>
-            </div>
+            <h2 class="new-arrivals__title">SHOPPING CART</h2>
         </div>
     </section>
-    <div class="product">
-        <div class="container product__logo">
-            <button class="product__turn-btn _icon-arrow-left"></button>
-            <button class="product__turn-btn _icon-arrow-right"></button>
+    <form class="cart container">
+        <div class="items">
+            <div class="item">
+                <div class="image-block">
+                    <img src="img/fi-3.png" alt="fi-3.png" class="item__image">
+                </div>
+                <div class="item__info">
+                    <h3 class="item__name">MANGO  PEOPLE  T-SHIRT</h3>
+                    <p class="item__text">Price:<span class="item__text_red">$300</span></p>
+                    <p class="item__text">Color:<span class="item__text_grey">Red</span></p>
+                    <p class="item__text">Size:<span class="item__text_grey">Xl</span></p>
+                    <label class="item__quantity_label item__text"><span>Quantity:</span>
+                        <input type="text" value="2" class="item__quantity_elem">
+                    </label>
+                </div>
+                <img src="img/cross.svg" alt="cross" class="cross">
+            </div>
+            <div class="item">
+                <div class="image-block">
+                    <img src="img/fi-8.png" alt="fi-8.png" class="item__image">
+                </div>
+                <div class="item__info">
+                    <h3 class="item__name">MANGO  PEOPLE  T-SHIRT</h3>
+                    <p class="item__text">Price:<span class="item__text_red">$300</span></p>
+                    <p class="item__text">Color:<span class="item__text_grey">Red</span></p>
+                    <p class="item__text">Size:<span class="item__text_grey">Xl</span></p>
+                    <label class="item__quantity_label item__text"><span>Quantity:</span>
+                        <input type="text" value="2" class="item__quantity_elem">
+                    </label>
+                </div>
+                <img src="img/cross.svg" alt="cross" class="cross">
+            </div>
+            <div class="buttons">
+                <button type="reset" class="items__button">CLEAR SHOPPING CART</button>
+                <button type="button" class="items__button">CONTINUE SHOPPING</button>
+            </div>
         </div>
-    </div>
-    <section class="container ordering">
-        <h3 class="ordering__title_1">WOMEN COLLECTION</h3>
-        <hr class="ordering__line_red">
-        <h2 class="ordering__title_2">MOSCHINO CHEAP AND CHIC</h2>
-        <p class="ordering__description">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</p>
-        <p class="ordering__price">$561</p>
-        <hr class="ordering__line_grey">
-        <form action="#" class="filter">
-            <div class="filter__selectors">
-                <label>
-                    <select name="CHOOSE-COLOR" id="CHOOSE-COLOR">
-                        <option value="CHOOSE COLOR">CHOOSE COLOR</option>
-                    </select>
+        <div class="address-total">
+            <fieldset class="address__form">
+                <legend class="address__title">SHIPPING ADRESS</legend>
+                <label class="address__label">
+                    <input type="text" placeholder="Bangladesh" class="address__input country">
                 </label>
-                <label>
-                    <select name="CHOOSE-SIZE" id="CHOOSE-SIZE">
-                        <option value="CHOOSE SIZE">CHOOSE SIZE</option>
-                    </select>
+                <label class="address__label">
+                    <input type="text" placeholder="State" class="address__input">
                 </label>
-                <label>
-                    <select name="QUANTITY" id="QUANTITY">
-                        <option value="QUANTITY">QUANTITY</option>
-                    </select>
+                <label class="address__label">
+                    <input type="text" placeholder="Postcode / Zip" class="address__input">
                 </label>
-            </div>
-            <button type="submit" class="_icon-cart fet-item__add-cart_btn"><span class="add-cart__text">Add to Cart</span></button>
-        </form>
-    </section>
-    <div class="fet-items container">
-        <div class="fet-item">
-            <img src="img/fi-4.png" alt="fi-4" class="fet-item__images">
-            <div class="fet-item__info">
-                <h5 class="fet-item__name">ELLERY X M'O CAPSULE</h5>
-                <p class="fet-item__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                <p class="fet-item__price">$52.00</p>
-            </div>
-            <div class="fet-item__add-cart_area">
-                <button class="_icon-cart fet-item__add-cart_btn"><span class="add-cart__text">Add to Cart</span></button>
+                <button type="button" class="button_address">GET A QUOTE</button>
+            </fieldset>
+            <div class="total__info">
+                <p class="total__sub">SUB TOTAL<span class="total__sub_price">$900</span></p>
+                <p class="total__grand">GRAND TOTAL<span class="total__grand_price">$900</span></p>
+                <hr class="total__line">
+                <button type="submit" class="total__btn">PROCEED TO CHECKOUT</button>
             </div>
         </div>
-        <div class="fet-item">
-            <img src="img/fi-3.png" alt="fi-3" class="fet-item__images">
-            <div class="fet-item__info">
-                <h5 class="fet-item__name">ELLERY X M'O CAPSULE</h5>
-                <p class="fet-item__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                <p class="fet-item__price">$52.00</p>
-            </div>
-            <div class="fet-item__add-cart_area">
-                <button class="_icon-cart fet-item__add-cart_btn"><span class="add-cart__text">Add to Cart</span></button>
-            </div>
-        </div>
-        <div class="fet-item">
-            <img src="img/fi-6.png" alt="fi-6" class="fet-item__images">
-            <div class="fet-item__info">
-                <h5 class="fet-item__name">ELLERY X M'O CAPSULE</h5>
-                <p class="fet-item__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                <p class="fet-item__price">$52.00</p>
-            </div>
-            <div class="fet-item__add-cart_area">
-                <button class="_icon-cart fet-item__add-cart_btn"><span class="add-cart__text">Add to Cart</span></button>
-            </div>
-        </div>
-    </div>
+    </form>
 </main>
 <footer class="footer">
     <div class="footer__upper">
